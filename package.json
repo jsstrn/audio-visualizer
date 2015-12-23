@@ -1,0 +1,26 @@
+{
+  "name": "audio-visualizer",
+  "version": "1.0.0",
+  "description": "A simple audio visualizer",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify assets/js/app.js -o assets/js/bundle.js -t babelify",
+    "watch": "watchify assets/js/app.js -o assets/js/bundle.js -t babelify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsstrn/audio-visualizer.git"
+  },
+  "author": "Jesstern Rays",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsstrn/audio-visualizer/issues"
+  },
+  "homepage": "https://github.com/jsstrn/audio-visualizer#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0",
+    "watchify": "^3.6.1"
+  }
+}
