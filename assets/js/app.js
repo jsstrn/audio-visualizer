@@ -30,7 +30,7 @@ function updateVisualizer () {
    .data(frequencyData)
    .attr('y', d => height - d)
    .attr('height', d => d)
-   .attr('fill', d => `rgb(${d}, ${d - 100}, ${d -50})`)
+   .attr('fill', d => `rgb(${d}, ${d - 100}, ${d - 50})`)
 }
 
 updateVisualizer()

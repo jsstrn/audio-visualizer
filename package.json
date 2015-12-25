@@ -2,11 +2,11 @@
   "name": "audio-visualizer",
   "version": "1.0.0",
   "description": "A simple audio visualizer",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "build": "browserify assets/js/app.js -o assets/js/bundle.js -t babelify",
     "watch": "watchify assets/js/app.js -o assets/js/bundle.js -t babelify",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "babelify": "^7.2.0",
+    "standard": "^5.4.1",
     "watchify": "^3.6.1"
   }
 }
